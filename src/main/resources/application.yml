@@ -1,0 +1,11 @@
+server:
+  port: 8761    #Porta padrao para service registry
+
+spring:
+  application:
+    name: ead-service-registry
+
+eureka:
+  client:
+    registerWithEureka: false     #Configuracao para esta aplicacao n ser client dela mesmo, ser apenas um servidor
+    fetchRegistry: false          #Nao busca um registro no Eureka
